@@ -1,0 +1,178 @@
+@font-face {
+    font-weight: 400;
+    font-family: "TT Lakes";
+    src: local("TT Lakes Regular"),
+        url("../font/TTLakes-Regular.woff");
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: "TT Lakes-Bold";
+    src: local("TT Lakes Bold"),
+        url("../font/TTLakes-Bold.woff");
+}
+
+body {
+    background-color: #F8F8F8;
+    font-family: "TT Lakes", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    color: #1B1C21;
+}
+
+a {
+    color: #1B1C21;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.menu,
+.title,
+.main__navigation {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.menu__title {
+    margin: 0;
+}
+
+.title {
+    font-family: "TT Lakes-Bold";
+    font-weight: 700;
+}
+
+.menu {
+    padding: 18px 0;
+    background-color: #FFF;
+}
+
+.menu__mobil {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__icon:nth-child(1) {
+    margin-right: 16px;
+}
+
+.mobil__left,
+.mobil__right {
+    display: flex;
+    align-items: center;
+
+}
+
+.mobil__left {
+    position: relative;
+}
+
+.mobil__left:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 2px;
+    height: 32px;
+    background: #EAEAEA;
+}
+
+.mobil__burger-menu,
+.mobil__logo {
+    margin-right: 17px;
+}
+
+.mobil__icon:nth-child(1) {
+    margin-right: 16px;
+}
+
+.mobil__contact {
+    display: none;
+}
+
+.menu__desktop {
+    display: none;
+}
+
+.main__list {
+    display: flex;
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.main__list::-webkit-scrollbar {
+    width: 0;
+}
+
+.list__item {
+    border: 2px solid transparent;
+    white-space: nowrap;
+    padding: 8px 10px;
+}
+
+.list__item a {
+    color: #7E7E82;
+}
+
+.list__item:hover {
+    background: #FFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.active {
+    background: #FFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.content__desc {
+    max-height: 200px;
+    text-overflow: clip;
+}
+
+.content__text {
+    margin-top: 0;
+    line-height: 20px;
+}
+
+.content__button {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+.pic-svg {
+    margin-right: 8px;
+}
+
+.content__text {
+    display: block;
+    height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content__image {
+    width: 100%;
+    height: auto;
+}
