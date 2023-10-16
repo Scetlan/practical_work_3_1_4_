@@ -84,7 +84,6 @@
     .main__list {
         display: flex;
         list-style-type: none;
-        flex-wrap: wrap;
 
         padding: 0;
         margin: 0;
@@ -116,7 +115,7 @@
 
     .content__article {
         width: 50%;
-        overflow: none;
+        overflow: auto;
         padding-right: 36px;
     }
 
@@ -125,11 +124,22 @@
     }
 
     .content__text {
-        max-width: 100%;
-        height: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .text {
         display: block;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .main__list {
+        flex-wrap: wrap;
+    }
+
+    .content__text {
+        max-width: 100%;
+        height: 100%;
     }
 }
