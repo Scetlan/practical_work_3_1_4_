@@ -23,7 +23,7 @@
                             fill="white" />
                     </svg>
                 </button>
-                <button class="mobil__logo">
+                <a href="#" class="mobil__logo">
                     <svg width="98" height="52" viewBox="0 0 98 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M36.5703 0.592529C36.018 0.592529 35.5703 1.04024 35.5703 1.59253V5.86748C35.5703 6.41977 36.018 6.86748 36.5703 6.86748H72.8973C83.0242 6.86748 90.9777 14.6641 90.9777 24.757C90.9777 25.0425 91.2092 25.274 91.4948 25.274H96.757C97.0425 25.274 97.274 25.0425 97.274 24.757C97.274 11.2677 86.432 0.592529 72.8973 0.592529H36.5703Z"
@@ -50,7 +50,7 @@
                             d="M80.953 24.4687C79.5053 23.1861 77.4846 22.4425 75.1911 21.6713C73.5569 21.1027 72.6565 20.7894 72.0562 20.2421C71.5824 19.8399 71.3712 19.4033 71.3712 18.8262C71.3712 17.5622 72.2301 16.2113 74.6414 16.2113C76.2801 16.2113 77.6521 16.912 78.7197 18.293L79.1435 18.8414L82.6597 14.3656L82.3392 14.0445C80.1886 11.8924 77.3548 10.7554 74.1439 10.7554C67.6657 10.7554 64.7658 14.9699 64.7658 19.1468C64.7658 21.3882 65.5651 23.196 67.1367 24.5175C68.5437 25.7234 70.2595 26.3991 71.9054 26.9507L72.0914 27.0123C73.553 27.4954 75.0646 27.9954 75.9674 28.8034C76.5955 29.3805 76.8754 30.0076 76.8754 30.8367C76.8754 32.7368 75.379 34.0137 73.152 34.0137C71.3916 34.0137 69.0735 33.1508 67.8471 30.7296L67.5263 30.0953L63.1558 34.1411L63.4135 34.5056C64.8079 36.4801 67.9545 39.7924 73.3594 39.7924C79.3191 39.7924 83.4817 35.9608 83.4817 30.4751C83.4817 27.3374 82.1051 25.4752 80.953 24.4687"
                             stroke="#80949F" stroke-width="0.5" />
                     </svg>
-                </button>
+                </a>
             </div>
             <div class="mobil__right">
                 <!-- добавление иконок в шапке сайта 768px -->
@@ -120,7 +120,13 @@
 
         <!-- 1120px -->
         <div class="menu__desktop container">
-            <h1 class="menu__title title">Услуги и сервисы</h1>
+            <h1 class="menu__title title">
+                <svg width="4" height="40" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7" />
+                </svg>
+                Услуги и сервисы
+            </h1>
             <ul class="menu__list list-service">
                 <li class="list-service__item">
                     <a class='link' href="#">
@@ -155,15 +161,21 @@
     </header>
     <main class="main container">
         <nav class="main__navigation">
-            <h1 class="main__title title">Услуги и сервисы</h1>
-            <ul class="main__list list">
-                <li class="list__item active"><a href="#">Ремонтируемые бренды</a></li>
-                <li class="list__item"><a href="#">Ремонтируемые устройства</a></li>
-                <li class="list__item"><a href="#">Цены на услуги</a></li>
-                <li class="list__item"><a href="#">Адреса сервисных центров</a></li>
-                <li class="list__item"><a href="#">Специальные цены</a></li>
-                <li class="list__item"><a href="#">Отзывы</a></li>
-            </ul>
+            <h2 class="main__title title">
+                <svg width="4" height="40" viewBox="0 0 4 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4 4C4 1.79086 2.20914 0 0 0V40C2.20914 40 4 38.2091 4 36V4Z" fill="#41F6D7" />
+                </svg>
+                Услуги и сервисы
+                </h1>
+                <ul class="main__list list">
+                    <li class="list__item active"><a href="#">Ремонтируемые бренды</a></li>
+                    <li class="list__item"><a href="#">Ремонтируемые устройства</a></li>
+                    <li class="list__item"><a href="#">Цены на услуги</a></li>
+                    <li class="list__item"><a href="#">Адреса сервисных центров</a></li>
+                    <li class="list__item"><a href="#">Специальные цены</a></li>
+                    <li class="list__item"><a href="#">Отзывы</a></li>
+                </ul>
         </nav>
         <section class="content">
             <article class="content__article">

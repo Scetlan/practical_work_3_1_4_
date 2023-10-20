@@ -5,6 +5,14 @@
         padding: 0 24px;
     }
 
+    .title svg {
+        position: absolute;
+        top: -8%;
+        left: -3%;
+
+
+    }
+
     .mobil__contact {
         display: block;
     }
@@ -71,9 +79,19 @@
         padding: 0 30px;
     }
 
+    .title svg {
+        position: absolute;
+        top: -4%;
+        left: -10%;
+    }
+
     .mobil,
     .main__title {
         display: none;
+    }
+
+    .menu {
+        background-color: transparent;
     }
 
     .menu__desktop {
