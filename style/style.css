@@ -28,6 +28,12 @@ body {
     color: #1B1C21;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 a {
     color: #1B1C21;
     text-decoration: none;
@@ -42,27 +48,23 @@ button {
 }
 
 .menu,
-.title,
 .main__navigation {
     margin: 0;
     margin-bottom: 24px;
 }
 
-.menu__title {
+.main__title {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
     margin: 0;
 }
 
-.title {
-    position: relative;
-    font-family: "TT Lakes";
-    font-weight: bold;
-    font-size: 28px;
-}
-
-.title svg {
+.main__title svg {
     position: absolute;
     top: -8%;
-    left: -5%;
+    left: -6%;
 }
 
 .menu {
@@ -73,10 +75,6 @@ button {
 .menu__mobil {
     display: flex;
     justify-content: space-between;
-}
-
-.menu__icon:nth-child(1) {
-    margin-right: 16px;
 }
 
 .mobil__left,
@@ -104,7 +102,7 @@ button {
     margin-right: 17px;
 }
 
-.mobil__icon:nth-child(1) {
+.mobil__item:nth-child(1) {
     margin-right: 16px;
 }
 
@@ -114,6 +112,13 @@ button {
 
 .menu__desktop {
     display: none;
+}
+
+.main__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
 }
 
 .main__list {
@@ -126,9 +131,19 @@ button {
     overflow: auto;
 }
 
-/* .main__list::-webkit-scrollbar {
+.mobil__list {
+    display: flex;
+}
+
+.main__list::-webkit-scrollbar {
     width: 0;
-} */
+}
+
+.main__list_desktop {
+    display: none;
+}
+
+
 
 .list__item {
     border: 2px solid transparent;
