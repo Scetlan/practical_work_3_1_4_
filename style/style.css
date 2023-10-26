@@ -47,6 +47,123 @@ button {
     margin: 0;
 }
 
+.drop-down {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    width: 278px;
+    height: 100vh;
+    padding: 18px 24px 32px 24px;
+
+    z-index: 100;
+    background-color: #FFF;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+}
+
+.drop-down__burger-menu_close {
+    display: flex;
+    align-items: center;
+}
+
+.drop-down__item .item__link{
+    display: block;
+    padding-bottom: 32px;
+    align-items: center;
+    color: #000;
+    transition: color 0.4s ease;
+  }
+  
+  .drop-down__item .item__link:hover {
+    color: #7E7E82;
+  }
+
+  .drop-down__item::before {
+    content: "";
+    width: 4px;
+    height: 32px;
+    border-left: 4px solid #41F6D7;
+    border-radius: 8px;
+    position: absolute;
+    left: -8px;
+    transform: translateY(-15%) rotate(180deg);
+    transition: left 0.4s ease;
+}
+
+.drop-down__item:hover::before {
+    left: -3px;
+  }
+
+.drop-down__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.drop-down__search {
+    display: flex;
+    align-items: center;
+}
+
+.drop-down__search:hover svg rect,
+.drop-down__burger-menu_close:hover svg rect {
+    fill: #d70040;
+} 
+
+.drop-down__logo {
+    margin-left: -60px;
+}
+
+.drop-down__footer {
+    position: absolute;
+    bottom: 32px;
+}
+
+.drop-down__icon_servise li button:hover svg rect{
+    fill: #d70040;
+}
+
+.drop-down__icon--btn {
+    margin-right: 16px;
+}
+
+.drop-down__icon_servise {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.drop-down__contact a {
+    display: block;
+}
+
+.drop-down__contact_email {
+    margin-bottom: 12px;
+}
+
+.drop-down__contact_phone {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.drop-down__lang {
+    margin-top: 40px;
+}
+
+.drop-down__lang {
+    display: flex;
+}
+
+.drop-down__lang li:not(:last-child) {
+    margin-right: 7px;
+}
+
+.drop-down__lang li a:hover {
+    color: #7E7E82;
+}
+
+
 .menu,
 .main__navigation {
     margin: 0;
@@ -143,25 +260,17 @@ button {
     display: none;
 }
 
-
-
 .list__item {
     border: 2px solid transparent;
     white-space: nowrap;
     padding: 8px 10px;
 }
 
-.list__item a {
+.item a {
     color: #7E7E82;
 }
 
 .list__item:hover {
-    background: #FFF;
-    border: 2px solid #B8FFEC;
-    border-radius: 6px;
-}
-
-.active {
     background: #FFF;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
